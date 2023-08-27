@@ -113,7 +113,7 @@ int main() {
                     }
 
                     if (alreadyBooked) {
-                        std::cout << "The seat no. is already booked.\n";
+                        cout << "The seat no. is already booked.\n";
                         break;
                     }
 
@@ -124,11 +124,11 @@ int main() {
                     cin >> customer.age;
                     cout << "Enter travel date: ";
                     cin.ignore();
-                    getline(std::cin, customer.travelDate);
+                    getline(cin, customer.travelDate);
                     cout << "Enter departure place: ";
-                    getline(std::cin, customer.departurePlace);
+                    getline(cin, customer.departurePlace);
                     cout << "Enter arrival place: ";
-                    getline(std::cin, customer.arrivalPlace);
+                    getline(cin, customer.arrivalPlace);
                     enqueue(queue, customer);
                     cout << "Ticket booked for seat " << customer.seatNumber << "\n";
                 } else {
